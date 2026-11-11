@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lily &amp; Associate Law Group — Silver Spring, MD</title>
+  <meta name="description" content="Lily &amp; Associate Law Group: full-service Maryland and D.C. law practice in Silver Spring. Family, immigration, personal injury, criminal defense, estate planning and business law.">
+  <style>
+    :root {
+      --navy: #1b2a41;
+      --gold: #b08d57;
+      --light: #f5f3ef;
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo { font-size: 1.2rem; font-weight: bold; letter-spacing: 0.3px; }
+    .logo span { color: var(--gold); }
+    nav a {
+      color: #e6e6e6;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--gold); }
+    .hero {
+      background: linear-gradient(rgba(27,42,65,0.85), rgba(27,42,65,0.85)), var(--navy);
+      color: #fff;
+      text-align: center;
+      padding: 96px 20px;
+    }
+    .hero .eyebrow { color: var(--gold); letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 12px; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 16px; }
+    .hero p { font-size: 1.15rem; max-width: 640px; margin: 0 auto 28px; color: #dfe4ec; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-family: inherit;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover { background: #9a7842; }
+    section { padding: 72px 20px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    h2 {
+      color: var(--navy);
+      font-size: 2rem;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--light);
+      padding: 28px 24px;
+      border-top: 3px solid var(--gold);
+    }
+    .card h3 { color: var(--navy); margin-bottom: 8px; font-size: 1.2rem; }
+    .card p { color: var(--muted); font-size: 0.97rem; }
+    .about { background: var(--light); }
+    .about-text { max-width: 760px; margin: 0 auto; text-align: center; font-size: 1.05rem; }
+    .why {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .why div { text-align: center; }
+    .why strong { display: block; color: var(--gold); font-size: 1.1rem; margin-bottom: 6px; }
+    .why span { color: var(--muted); font-size: 0.97rem; }
+    .quotes .grid .card { background: #fff; border: 1px solid #e4e0d8; border-top: 3px solid var(--gold); }
+    .quotes blockquote { font-style: italic; color: var(--text); margin-bottom: 10px; }
+    .quotes cite { color: var(--navy); font-style: normal; font-weight: bold; font-size: 0.9rem; }
+    .contact-form {
+      max-width: 620px;
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cfcfcf;
+      font-family: inherit;
+      font-size: 1rem;
+      border-radius: 3px;
+    }
+    .contact-form textarea { min-height: 130px; resize: vertical; }
+    .info {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--muted);
+    }
+    .info a { color: var(--navy); }
+    footer {
+      background: var(--navy);
+      color: #c9d1dc;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.85rem;
+    }
+    footer p + p { margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">Lily &amp; <span>Associate Law Group</span></div>
+      <nav>
+        <a href="#practice">Practice Areas</a>
+        <a href="#about">About</a>
+        <a href="#quotes">Clients</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">Silver Spring, MD · Maryland &amp; D.C.</div>
+    <h1>Trusted counsel when the stakes are personal.</h1>
+    <p>Your go-to legal team in Silver Spring. You work directly with attorney Lily Randall from your first consultation through resolution.</p>
+    <a class="btn" href="#contact">Book a Free Consultation</a>
+  </section>
+
+  <section id="practice">
+    <div class="container">
+      <h2>Our Specialized Legal Practice Areas</h2>
+      <p class="subtitle">Serving individuals, families and small businesses across Silver Spring and the greater D.C. metro area.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Family Law</h3>
+          <p>Divorce, custody, child support and marital property.</p>
+        </div>
+        <div class="card">
+          <h3>Immigration</h3>
+          <p>Family petitions, green cards, citizenship and removal defense.</p>
+        </div>
+        <div class="card">
+          <h3>Personal Injury</h3>
+          <p>Auto accidents, slip and fall, and wrongful death claims.</p>
+        </div>
+        <div class="card">
+          <h3>Criminal Defense</h3>
+          <p>DUI/DWI, misdemeanors and felony defense in Maryland courts.</p>
+        </div>
+        <div class="card">
+          <h3>Estate Planning</h3>
+          <p>Wills, trusts, powers of attorney and probate.</p>
+        </div>
+        <div class="card">
+          <h3>Inheritance</h3>
+          <p>Guidance on inheriting property and assets, and resolving inheritance disputes.</p>
+        </div>
+        <div class="card">
+          <h3>Business Law</h3>
+          <p>Entity formation, contracts and commercial disputes for small businesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Our Firm</h2>
+      <p class="subtitle">Get to know Lily: your dedicated attorney.</p>
+      <p class="about-text">
+        Lily Randall founded the firm after more than a decade inside Maryland courtrooms and D.C.
+        administrative proceedings. She built her practice on a simple promise: clients deserve to
+        understand their case, reach their lawyer, and never feel like a file number. Lily personally
+        reviews every intake, sets the strategy, and stays involved through resolution. She is admitted
+        in Maryland and the District of Columbia. Lily &amp; Associate Law Group has served clients since 2005.
+      </p>
+      <div class="why">
+        <div>
+          <strong>Direct access to your attorney</strong>
+          <span>You work with Lily personally. Calls and emails are returned the same day.</span>
+        </div>
+        <div>
+          <strong>Plain-English guidance</strong>
+          <span>We explain the law and your options in language you can act on.</span>
+        </div>
+        <div>
+          <strong>Transparent, flat-fee options</strong>
+          <span>Clear pricing upfront on most matters.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quotes" class="quotes">
+    <div class="container">
+      <h2>Hear from Our Clients</h2>
+      <p class="subtitle">Names shortened to first names for privacy.</p>
+      <div class="grid">
+        <div class="card">
+          <blockquote>"Lily guided me through a difficult divorce with compassion and clarity. I always knew where my case stood."</blockquote>
+          <cite>— Kamila, Family Law</cite>
+        </div>
+        <div class="card">
+          <blockquote>"She made a stressful green card process feel manageable and kept us informed at every step."</blockquote>
+          <cite>— William, Immigration</cite>
+        </div>
+        <div class="card">
+          <blockquote>"After my accident, Lily handled the insurance company so I could focus on healing."</blockquote>
+          <cite>— Mary, Personal Injury</cite>
+        </div>
+        <div class="card">
+          <blockquote>"Calm, prepared, and relentless in the courtroom. I could not have asked for better representation."</blockquote>
+          <cite>— James, Criminal Defense</cite>
+        </div>
+        <div class="card">
+          <blockquote>"She put together a clear plan for my family and explained every document in plain English."</blockquote>
+          <cite>— Wayne, Estate Planning</cite>
+        </div>
+        <div class="card">
+          <blockquote>"Lily has been our go-to counsel for contracts and entity matters. Responsive and practical."</blockquote>
+          <cite>— Meg, Business Law</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Connect With Us</h2>
+      <p class="subtitle">Your first consultation is free and completely confidential. We respond within one business day.</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); this.reset(); alert('Thank you. We will respond within one business day.');">
+        <input type="text" name="name" placeholder="Your full name" required>
+        <input type="email" name="email" placeholder="Your email address" required>
+        <input type="tel" name="phone" placeholder="Phone number">
+        <textarea name="message" placeholder="How can we help?" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+      <div class="info">
+        <p>Georgia Ave, Silver Spring, MD 20910</p>
+        <p>Phone: <a href="tel:+14109148413">(410) 914-8413</a> · Email: <a href="mailto:Lilyrandall090@gmail.com">Lilyrandall090@gmail.com</a></p>
+        <p>Office hours: Mon–Fri 9 AM–6 PM, Sat 10 AM–2 PM, Sun closed</p>
+        <p>Free consultations available in person, by phone, or over video.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Lily &amp; Associate Law Group · Silver Spring, MD · (410) 914-8413 · Lilyrandall090@gmail.com · Georgia Ave, Silver Spring, MD 20910</p>
+    <p>Attorney Advertising. Prior results do not guarantee a similar outcome; each case depends on its own facts. Licensed in Maryland and the District of Columbia.</p>
+    <p>&copy; <span id="year"></span> Lily &amp; Associate Law Group. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
