@@ -95,6 +95,23 @@
     .card h3 { color: var(--navy); margin-bottom: 8px; font-size: 1.2rem; }
     .card p { color: var(--muted); font-size: 0.97rem; }
     .about { background: var(--light); }
+    .portrait {
+      display: block;
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 50%;
+      border: 4px solid var(--gold);
+      margin: 0 auto 24px;
+    }
+    .team-photo {
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
     .about-text { max-width: 760px; margin: 0 auto; text-align: center; font-size: 1.05rem; }
     .why {
       display: grid;
@@ -202,6 +219,7 @@
     <div class="container">
       <h2>About Our Firm</h2>
       <p class="subtitle">Get to know Lily: your dedicated attorney.</p>
+      <img class="portrait" src="images/IMG_5722.jpeg" alt="Lily Randall, attorney and founder of Lily &amp; Associate Law Group">
       <p class="about-text">
         Lily Randall founded the firm after more than a decade inside Maryland courtrooms and D.C.
         administrative proceedings. She built her practice on a simple promise: clients deserve to
@@ -223,6 +241,14 @@
           <span>Clear pricing upfront on most matters.</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container">
+      <h2>Our Team</h2>
+      <p class="subtitle">Lily and her team, ready to help with your matter.</p>
+      <img class="team-photo" src="images/IMG_5723.jpeg" alt="Lily and her team outside a modern office building">
     </div>
   </section>
 
