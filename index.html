@@ -292,7 +292,8 @@
     <div class="container">
       <h2>Connect With Us</h2>
       <p class="subtitle">Your first consultation is free and completely confidential. We respond within one business day.</p>
-      <form class="contact-form" onsubmit="event.preventDefault(); this.reset(); alert('Thank you. We will respond within one business day.');">
+      <form class="contact-form" action="https://formspree.io/f/maeowjjj" method="POST">
+        <input type="hidden" name="_subject" value="New message from the Lily & Associate website">
         <input type="text" name="name" placeholder="Your full name" required>
         <input type="email" name="email" placeholder="Your email address" required>
         <input type="tel" name="phone" placeholder="Phone number">
